@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Check</title>
+</head>
+<body>
+    <h1>Budget Check</h1>
+    <p id="result"></p>
+
+    <script>
+        var budget = 100;
+        var product = 60;
+
+        if (budget >= product) {
+            document.getElementById("result").innerHTML = "U heeft genoeg geld!";
+            document.getElementById("result").style.color = "green";
+        } else {
+            document.getElementById("result").innerHTML = "Helaas, te weinig geld!";
+            document.getElementById("result").style.color = "red";
+        }
+    </script>
+</body>
+</html>
